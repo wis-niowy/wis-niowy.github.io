@@ -3,39 +3,70 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
-
-<div class="login">
-	<!--<img src="images/SmallLogo.png">
-	<form id="Logon" action="Login" method="post" autocomplete="off">
-		<p><input id="requestUrl" name="url" type="hidden" value="http://localhost:9089/Authenticator/auth"></p>
-		<p><input id="userId" autocomplete="off" type="text" name="userId" value="" placeholder="User ID"></p>
-		<p><input id="password" autocomplete="off" type="password" name="password" value="" placeholder="Password"></p>
-		<p class="submit"><input type="submit" name="commit" value="Login"></p>
-		<p class="about-links"></p>
-	</form>-->
-</div>
-</form>
 <div class="container">
-	<div class="col-md-6">
-		<div class="login-panel panel panel-default">
-			<div class="panel-heading">
-				<h3 class="panel-title">Sign In</h3>
+	<div class="row">
+		<form role="form">
+			<div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+				<label for="exampleInputEmail1">Customer ID</label>
+				<input type="text" class="form-control" id="customer_id" placeholder="Customer ID">
 			</div>
-			<div class="panel-body">
-				<form role="form" action="http://localhost:9089/Authenticator/auth" method="post">
-					<fieldset>
-						<div class="form-group">
-							<input class="form-control" placeholder="User ID" name="userid" type="text" autofocus="">
-						</div>
-						<div class="form-group">
-							<input class="form-control" placeholder="Password" name="password" type="password" value="">
-						</div>
-						<!-- Change this to a button or input when using this as a form -->
-						<!--<a href="http://localhost:9089/Authenticator/auth" class="btn btn-sm btn-success">Login</a>-->
-						<input class="btn btn-sm btn-success" type="submit" value="Login">
-					</fieldset>
-				</form>
+			<div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+				<label for="exampleInputEmail1">Customer ID 2</label>
+				<input type="text" class="form-control" id="customer_id_2" placeholder="Customer ID 2">
 			</div>
-		</div>
+			<div class="clearfix"></div>
+			<div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+				<label for="exampleInputPassword1">Temp</label>
+				<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Sth more">
+			</div>
+			<div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+				<label for="exampleInputPassword1">Temp 2</label>
+				<input type="password" class="form-control" id="exampleInputPassword2" placeholder="Sth more">
+			</div>
+			<div class="clearfix"></div>
+			<!--<div class="form-group col-xs-10 col-sm-10 col-md-4 col-lg-4">
+				<label for="exampleInputFile">File input</label>
+				<input type="file" id="exampleInputFile">
+				<p class="help-block">Example block-level help text here.</p>
+			</div>-->
+			<!--<div class="col-xs-10 col-sm-10 col-md-4 col-lg-4">
+				<label>
+					<input type="radio"> Check me out<input type="radio"> Check me out<input type="radio"> Check me out
+				</label>
+			</div>-->
+			<div class="clearfix"></div>
+			<div class="col-xs-10 col-sm-4 col-md-4 col-lg-4">
+				<button type="submit" class="btn btn-default">Submit</button>
+			</div>
+		</form>
+    <div class="clearfix"></div>
+
+    <br /><br />
+	</div>
+	<div class="row">
+		<iframe width="100%" height="600px" src="http://localhost:9089/Browser/servletcontroller"></iframe>
 	</div>
 </div>
+
+<!--<style>
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+    width: 48%;
+}
+
+.right {
+    width: 48%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>-->
